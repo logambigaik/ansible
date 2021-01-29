@@ -37,7 +37,7 @@
             amazon-linux-extras install ansible2
  
 ![image](https://user-images.githubusercontent.com/54719289/106312585-e8772d00-628c-11eb-9255-ebf0cfb48b3d.png)
-![image](https://user-images.githubusercontent.com/54719289/106312542-d4333000-628c-11eb-8f50-504547d471e4.png
+![image](https://user-images.githubusercontent.com/54719289/106312542-d4333000-628c-11eb-8f50-504547d471e4.png)
 
         Step 3:   create inventory file(either in /stc/ansible/ or in your local path-->name of the file -hosts) for mentioning the ipaddr of node machine
                   
