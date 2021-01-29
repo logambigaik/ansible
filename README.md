@@ -77,7 +77,7 @@
          
  # Install httpd with ansible-playbook
  
-    create install_httpd.yml and check the syntax check
+  1.    create install_httpd.yml and check the syntax check
     
     
   ![image](https://user-images.githubusercontent.com/54719289/106318868-920eec00-6296-11eb-9cff-ab7b7874d7e5.png)
@@ -87,7 +87,7 @@
   
   ![image](https://user-images.githubusercontent.com/54719289/106319059-de5a2c00-6296-11eb-811d-20f749006758.png)
 
-  Run :
+ 2  Run :
   
   ansible-playbook install_httpd.yml
 
@@ -96,3 +96,14 @@
                     
     
 ![image](https://user-images.githubusercontent.com/54719289/106304735-bca27a00-6281-11eb-9960-5ba8e92fb40f.png)
+
+3.  Service start added in install_httpd.yml:
+
+![image](https://user-images.githubusercontent.com/54719289/106320148-74428680-6298-11eb-8b6c-b72ff16c4778.png)
+
+
+
+
+
+    
+
