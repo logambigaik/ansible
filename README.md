@@ -100,6 +100,11 @@
 
 # For tomcat ---> place the tomcat.service under the folder where your ansible yml is saved.
 
+Or else will get the below error,
+
+![image](https://user-images.githubusercontent.com/54719289/106330852-fe471b00-62a9-11eb-8851-7c3b4711e8de.png)
+
+
 ![image](https://user-images.githubusercontent.com/54719289/106330616-8d9ffe80-62a9-11eb-8cd0-46e5c9965884.png)
 
 
