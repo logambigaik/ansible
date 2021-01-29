@@ -1,8 +1,11 @@
 ---
 - hosts: webservers
-  tasks: 
+  tasks:
     - name: Install httpd package
       yum:
            name: httpd
            state: present
-
+    - name: Start httpd service
+      service:
+           name: httpd
+           state: started
