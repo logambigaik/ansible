@@ -1,0 +1,12 @@
+---
+- hosts: webservers
+  tasks:
+    - name: Install git docker
+      yum:
+           name: "{{ pkg }}"
+           state: present
+
+      vars:
+           pkg:
+           - git
+           - docker
