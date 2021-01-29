@@ -1,0 +1,26 @@
+---
+- hosts: webservers
+  tasks:
+    - name: Java installation
+      yum:
+           name: java-1.8.0-openjdk
+           state: present
+    - name: Install tomcat
+      get_url:
+           url:  https://downloads.apache.org/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8.5.61.tar.gz
+           dest: /opt
+           mode: '0440'
+    - name: Unarchive tomcat tar
+      unarchive:
+           src: /opt/apache-tomcat-8.5.61.tar.gz
+           dest: /opt
+           remote_src: yes
+    - name: Tomcat service copy
+      copy:
+          src: ./tomcat.service
+          dest: /etc/systemd/system
+          mode: 0777
+    - name: Start the tomcat
+      service:
+          name: tomcat
+          state: started
