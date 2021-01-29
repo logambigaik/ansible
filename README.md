@@ -69,10 +69,30 @@
        
 ![image](https://user-images.githubusercontent.com/54719289/106314154-53c1fe80-628f-11eb-9126-f1d6a2680af9.png)
 
+
+        get_url:    ansible -m get_url -a 'url=https://downloads.apache.org/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8. dest=/opt mode=0777' webservers
+
+        unarchive:  ansible -m unarchive -a 'src=/opt/apache-tomcat-8.5.61.tar.gz dest=/opt remote_src=yes' webservers
+
          
-         
-        
-        
-                
+ # Install httpd with ansible-playbook
+ 
+    create install_httpd.yml and check the syntax check
+    
+    
+  ![image](https://user-images.githubusercontent.com/54719289/106318868-920eec00-6296-11eb-9cff-ab7b7874d7e5.png)
+
+  
+  After correction:
+  
+  ![image](https://user-images.githubusercontent.com/54719289/106319059-de5a2c00-6296-11eb-811d-20f749006758.png)
+
+  Run :
+  
+  ansible-playbook install_httpd.yml
+
+![image](https://user-images.githubusercontent.com/54719289/106319284-3729c480-6297-11eb-8c37-b92c9c76be88.png)
+
+                    
     
 ![image](https://user-images.githubusercontent.com/54719289/106304735-bca27a00-6281-11eb-9960-5ba8e92fb40f.png)
