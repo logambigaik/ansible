@@ -93,13 +93,20 @@
 
 ![image](https://user-images.githubusercontent.com/54719289/106319284-3729c480-6297-11eb-8c37-b92c9c76be88.png)
 
-                    
-    
-![image](https://user-images.githubusercontent.com/54719289/106304735-bca27a00-6281-11eb-9960-5ba8e92fb40f.png)
-
 3.  Service start added in install_httpd.yml:
 
 ![image](https://user-images.githubusercontent.com/54719289/106320148-74428680-6298-11eb-8b6c-b72ff16c4778.png)
+
+
+# For tomcat ---> place the tomcat.service under the folder where your ansible yml is saved.
+
+![image](https://user-images.githubusercontent.com/54719289/106330616-8d9ffe80-62a9-11eb-8cd0-46e5c9965884.png)
+
+
+# Check the tomcat service in node:
+
+![image](https://user-images.githubusercontent.com/54719289/106330665-a0b2ce80-62a9-11eb-9df5-26933069d7b5.png)
+
 
 
 
