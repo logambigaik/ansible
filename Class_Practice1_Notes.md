@@ -28,6 +28,18 @@
  ![image](https://user-images.githubusercontent.com/54719289/106366340-39f0ec00-6361-11eb-8dd5-3fa0526abd85.png)
  ![image](https://user-images.githubusercontent.com/54719289/106366328-22b1fe80-6361-11eb-9f29-0cde80a18e99.png)
  
+ 
+ # To copy the master ssh key into another machine use below script,
+        #!/bin/bash
+        for ip in `cat /home/list_of_servers`; do
+            ssh-copy-id -i ~/.ssh/id_rsa.pub $ip
+        done
+    
+ 
+
+#   For different OS:
+
+![image](https://user-images.githubusercontent.com/54719289/106369971-053e5e00-637c-11eb-9d41-18a09a72d29b.png)
 
     
     
