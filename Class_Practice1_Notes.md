@@ -15,19 +15,19 @@
       
       
       
- ![image](https://user-images.githubusercontent.com/54719289/106366074-93581b80-635f-11eb-8f59-e86444cd6565.png)
-      
-      
         # stat  :retrieve file or file system status
 
     it determines if yum path exists or not, if exists install git in linux or else it skips linux and install in ubuntu
  ![image](https://user-images.githubusercontent.com/54719289/106366130-cf8b7c00-635f-11eb-9a9d-c0803f56edb1.png)
     
+![image](https://user-images.githubusercontent.com/54719289/106366074-93581b80-635f-11eb-8f59-e86444cd6565.png)    
     
-    
-    
- ![image](https://user-images.githubusercontent.com/54719289/106366328-22b1fe80-6361-11eb-9f29-0cde80a18e99.png)
+ 
+ # The below code skips installing if git already exists,
+ 
  ![image](https://user-images.githubusercontent.com/54719289/106366340-39f0ec00-6361-11eb-8dd5-3fa0526abd85.png)
+ ![image](https://user-images.githubusercontent.com/54719289/106366328-22b1fe80-6361-11eb-9f29-0cde80a18e99.png)
+ 
 
     
     
