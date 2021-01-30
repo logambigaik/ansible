@@ -113,6 +113,45 @@ Or else will get the below error,
 ![image](https://user-images.githubusercontent.com/54719289/106330665-a0b2ce80-62a9-11eb-9df5-26933069d7b5.png)
 
 
+# ansible_practice1.yml:
+
+    - name: sample
+      hosts: webservers
+      remote_user: root   ===> remote user is root
+      become: true        ===>  allowing root user to execute this playbook, if false then permission denied to remote user for execution 
+
+
+---
+- name: sample
+  hosts: webservers
+  remote_user: root
+  become: false
+  tasks:
+     - name: install
+       yum :
+             name: maven
+             state: latest
+     - name: Checking
+       command: echo 'Heloo'
+
+
+# Execute with -v so that we could see the echo command:
+    
+    Command: ansible-palybook -v ansible_practice1.yml --syntax-check
+    
+    
+![image](https://user-images.githubusercontent.com/54719289/106362962-b24cb280-634b-11eb-9ebc-05b1d90fa6d9.png)
+
+![image](https://user-images.githubusercontent.com/54719289/106362923-7dd8f680-634b-11eb-9266-189197fe0298.png)
+
+
+
+      
+      
+
+
+
+
 
 
 
