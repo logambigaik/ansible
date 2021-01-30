@@ -1,0 +1,12 @@
+---
+- name: sample
+  hosts: webservers
+  remote_user: root
+  become: true
+  tasks:
+     - name: install
+       yum :
+             name: maven
+             state: latest
+     - name: Checking
+       command: echo 'Heloo'
