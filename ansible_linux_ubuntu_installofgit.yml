@@ -1,0 +1,19 @@
+---
+- hosts: webservers
+  tasks:
+    - name: Check yum location
+      stat:
+          path: /usr/bin/yum
+      register: yum_path
+    - name: Install git in linux node
+      yum:
+          name: git
+          state: present
+          update_cache: yes
+      when: yum_path.stat.exists == True
+    - name: Install git in ubuntu  node
+      apt:
+          name: git
+          state: present
+          update_cache: yes
+      when: yum_path.stat.exists == False
