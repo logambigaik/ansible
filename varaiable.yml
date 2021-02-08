@@ -1,0 +1,18 @@
+---
+- hosts: webservers
+  tasks:
+  - name: variable usage
+    debug:
+      msg: "{{ package }}"
+
+  - name: Install Java on Linux
+    yum:
+      name: "{{ package }}"
+      state: present
+
+
+  - name: Install Java on ubuntu
+    apt:
+      name: "{{ package }}"
+      state: present
+      update_cache: yes
