@@ -146,10 +146,18 @@ Or else will get the below error,
 
 
 
+# Execute with -m for webserver(etc/ansible/hosts):
+
+![image](https://user-images.githubusercontent.com/54719289/107237922-49e98980-6a4d-11eb-8589-01b664f5d0d6.png)
       
       
 
+# Variable .yml:
 
+        
+![image](https://user-images.githubusercontent.com/54719289/107239755-2f181480-6a4f-11eb-821f-11c09c3e84ac.png)
+
+![image](https://user-images.githubusercontent.com/54719289/107239573-009a3980-6a4f-11eb-9385-b6ba8b1b2710.png)
 
 
 
