@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create
+    docker_container:
+      name: webappcontainer
+      image: klogambigai/stackdemo:latest
+      state: present
+      exposed_ports:
+      - 8000:80
+
