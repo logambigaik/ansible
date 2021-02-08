@@ -1,0 +1,23 @@
+- hosts: localhost
+
+  tasks:
+  - name: Install docker
+    yum:
+      name: docker
+      state: present
+  - name: start docker
+    service:
+      name: docker
+      state: started
+  - name: install python and python-pip
+    yum:
+      name: python
+      state: present
+    yum:
+      name: python-pip
+      state: present
+
+  - name: install docker-py
+    pip:
+      name: docker-py
+      state: present
