@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+  - name: create file
+    file:
+       path: /root/test.txt
+       state: touch
+       mode: 0777
+  - name: add lines in file
+    lineinfile:
+       path: /root/test.txt
+       line: "Hello World !!!"
