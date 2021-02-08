@@ -1,0 +1,19 @@
+---
+- hosts: webservers
+  tasks:
+  - name: print os
+    debug:
+      msg: "{{ ansible_distribution }} {{ ansible_os_family }}"
+
+  - name: Install Java on Linux
+    yum:
+      name: java-1.8.0-openjdk
+      state: present
+    when: ansible_distribution == "Amazon"
+
+  - name: Install Java on ubuntu
+    apt:
+      name: openjdk-8-jdk
+      state: present
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
