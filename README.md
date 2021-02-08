@@ -187,6 +187,30 @@ Or else will get the below error,
 ![image](https://user-images.githubusercontent.com/54719289/107262269-57f7d400-6a66-11eb-9a4b-87e96bc81508.png)
 
 
+# Run docker container using ansible playbook (docker and docker-py is mandatory to run container:
+
+![image](https://user-images.githubusercontent.com/54719289/107274446-6948dc80-6a76-11eb-8ea0-fc6894b7e574.png)
+
+        Run https://github.com/logambigaik/ansible/blob/main/install-dockerpkg-in-ansible.yml to fix the issue.
+        
+
+# docker-container:
+    Instal docker with pip  -for docker login issue
+
+---
+        - hosts: localhost
+          tasks:
+          - name: create
+            docker_container:
+                name: webappcontainer
+                image: klogambigai/stackdemo:latest
+                state: present
+                exposed_ports:
+                - 8000:80
+
+![image](https://user-images.githubusercontent.com/54719289/107288173-07de3900-6a89-11eb-8cf1-221a66dc840f.png)
+
+
 
 
 
