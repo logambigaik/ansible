@@ -161,6 +161,15 @@ Or else will get the below error,
 
 
 
+# Variable with two variables:
+
+
+![image](https://user-images.githubusercontent.com/54719289/107241480-0729b080-6a51-11eb-8a0d-c344351b8e4b.png)
+
+![image](https://user-images.githubusercontent.com/54719289/107240777-4d324480-6a50-11eb-83ec-7d2e0cadc231.png)
+
+
+
 
 
 
