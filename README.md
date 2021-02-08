@@ -173,6 +173,19 @@ Or else will get the below error,
 
 ![image](https://user-images.githubusercontent.com/54719289/107240777-4d324480-6a50-11eb-83ec-7d2e0cadc231.png)
 
+# Variable usage:
+
+![image](https://user-images.githubusercontent.com/54719289/107260117-d010ca80-6a63-11eb-9a39-00f03292b71e.png)
+
+# Variable with runtime value:
+
+![image](https://user-images.githubusercontent.com/54719289/107260652-588f6b00-6a64-11eb-8d61-384548d4e302.png)
+
+
+# lineinline ---to add line in file:
+
+![image](https://user-images.githubusercontent.com/54719289/107262269-57f7d400-6a66-11eb-9a4b-87e96bc81508.png)
+
 
 
 
