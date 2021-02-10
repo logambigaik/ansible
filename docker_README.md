@@ -101,15 +101,31 @@
 
 # with password.yml:
 
+      COmmand:       ansible-playbook -v --ask-vault-pass psql.yml --tags=create
+
       if there is no space after key like postgres_pwd:Password1 then , we will get below error
       
  ![image](https://user-images.githubusercontent.com/54719289/107580037-0133fb00-6c1c-11eb-833f-21a46e751fe7.png)
 
             it should be postgres_pwd: Password1.
-            
+      
+      -            
             
 ![image](https://user-images.githubusercontent.com/54719289/107580157-29235e80-6c1c-11eb-8c3c-e694a1a837ea.png)
 ![image](https://user-images.githubusercontent.com/54719289/107580201-38a2a780-6c1c-11eb-8cce-39e17b1e7fd6.png)
+
+
+
+# with password file and instead ask-vault usigs --vault-password-file:
+
+      [root@ip-172-31-49-130 Dockerpostgres]# ansible-playbook -v psql.yml --vault-password-file=test.yml --tags=create
+
+      FOr that create test.yml to save vault password and pass the same while running ansible command.
+      
+![image](https://user-images.githubusercontent.com/54719289/107581100-9a174600-6c1d-11eb-9830-736e8f8c5062.png)
+      
+![image](https://user-images.githubusercontent.com/54719289/107580944-63d9c680-6c1d-11eb-82f7-600e9eafa388.png)
+![image](https://user-images.githubusercontent.com/54719289/107580973-6e945b80-6c1d-11eb-9686-2fd385d0e44a.png)
 
 
 
