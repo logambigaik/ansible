@@ -89,6 +89,30 @@
 
             Step3: Use that value in docker_container file:
  ![image](https://user-images.githubusercontent.com/54719289/107578690-127c0800-6c1a-11eb-993b-bbfc09242824.png)
+ 
+
+# with var variable:
+
+ ![image](https://user-images.githubusercontent.com/54719289/107579226-d2695500-6c1a-11eb-8a8d-0e2946e1ebc2.png)
+
+      ansible-playbook -v psql.yml --tags=create
+      
+ ![image](https://user-images.githubusercontent.com/54719289/107579346-f9c02200-6c1a-11eb-99a8-7fdbd2604992.png)
+
+# with password.yml:
+
+      if there is no space after key like postgres_pwd:Password1 then , we will get below error
+      
+ ![image](https://user-images.githubusercontent.com/54719289/107580037-0133fb00-6c1c-11eb-833f-21a46e751fe7.png)
+
+            it should be postgres_pwd: Password1.
+            
+            
+![image](https://user-images.githubusercontent.com/54719289/107580157-29235e80-6c1c-11eb-8c3c-e694a1a837ea.png)
+![image](https://user-images.githubusercontent.com/54719289/107580201-38a2a780-6c1c-11eb-8cce-39e17b1e7fd6.png)
+
+
+
             
             
             
