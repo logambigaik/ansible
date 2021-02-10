@@ -63,4 +63,12 @@
   ![image](https://user-images.githubusercontent.com/54719289/107380123-97c8c500-6b13-11eb-9234-2bbee4b276c1.png)
 
 
+# docker -run for postgres:
+
+        
+![image](https://user-images.githubusercontent.com/54719289/107574924-3be66500-6c15-11eb-831f-f97ceccab41d.png)
+![image](https://user-images.githubusercontent.com/54719289/107575042-63d5c880-6c15-11eb-8bb2-15c4f3313606.png)
+![image](https://user-images.githubusercontent.com/54719289/107575147-8ec01c80-6c15-11eb-92b8-832b7daf5ce5.png)
+
+
 
