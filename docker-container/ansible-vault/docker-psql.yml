@@ -1,17 +1,22 @@
 ---
 - hosts: localhost
+  #vars:
+  # - postgres_pwd: Password1
+  vars_files:
+    - password.yml
   tasks:
   - name: Run db container
     docker_container:
       name: psql-container
       image: postgres:v1
-      env:
-        PGUSER: flaskdb
-        POSTGRES_PASSWORD: Password1
       state: started
       recreate: yes
       ports:
       - 5432:5432
+      env:
+        PGUSER: flaskdb
+        POSTGRES_PASSWORD: "{{ postgres_pwd }}"
+
     tags: create
 
   - name: Remove db container
@@ -20,7 +25,5 @@
       image: postgres:v1
       state: absent
       recreate: yes
-      ports:
-      - 5432:5432
     tags: remove
 
