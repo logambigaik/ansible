@@ -71,4 +71,27 @@
 ![image](https://user-images.githubusercontent.com/54719289/107575147-8ec01c80-6c15-11eb-92b8-832b7daf5ce5.png)
 
 
+#  Ansible-vault --> it helps to protect the password in encrypt format
+
+![image](https://user-images.githubusercontent.com/54719289/107578013-32f79280-6c19-11eb-888f-e10876ac4f03.png)
+
+            Step1 :For that created password.yml and the password in key value format,
+            
+            for example:
+              postgres_pwd:Password1
+              
+            
+            Step 2: ansible-vault encrypt password.yml (provide password for ansible-vault-test123)
+            
+ ![image](https://user-images.githubusercontent.com/54719289/107578527-d9dc2e80-6c19-11eb-8b47-a4341e15dd56.png)
+ ![image](https://user-images.githubusercontent.com/54719289/107578565-e791b400-6c19-11eb-9794-84d5b34cae59.png)
+
+
+            Step3: Use that value in docker_container file:
+ ![image](https://user-images.githubusercontent.com/54719289/107578690-127c0800-6c1a-11eb-993b-bbfc09242824.png)
+            
+            
+            
+            
+
 
