@@ -1,0 +1,26 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Run db container
+    docker_container:
+      name: psql-container
+      image: postgres:v1
+      env:
+        PGUSER: flaskdb
+        POSTGRES_PASSWORD: Password1
+      state: started
+      recreate: yes
+      ports:
+      - 5432:5432
+    tags: create
+
+  - name: Remove db container
+    docker_container:
+      name: psql-container
+      image: postgres:v1
+      state: absent
+      recreate: yes
+      ports:
+      - 5432:5432
+    tags: remove
+
