@@ -5,15 +5,20 @@
     yum:
          name: python-pip
          state: present
+
   - name: Install docker module
     pip:
          name: docker
+
   - name: Install boto3 module
     pip:
          name: boto3
-  - name: Create Image
-    docker
-          
+
+  - name: print aws secret
+    debug:
+      msg: " {{ lookup('aws_secret','dev/app/postgrespwd') }}"
+
+
   - name: Run db container
     docker_container:
       name: psql-container
