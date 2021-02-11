@@ -128,6 +128,7 @@ Hashivault manual setup:
 
 
 # Running ansible playbook:
+![image](https://user-images.githubusercontent.com/54719289/107701128-749e4100-6cde-11eb-86d0-8e468ff5ea75.png)
 ![image](https://user-images.githubusercontent.com/54719289/107700862-1bcea880-6cde-11eb-8304-44f59c8f78c8.png)
 
 ![image](https://user-images.githubusercontent.com/54719289/107700984-44ef3900-6cde-11eb-8f8d-34e53c959c9e.png)
