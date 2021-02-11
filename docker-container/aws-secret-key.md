@@ -50,3 +50,33 @@
 
 ![image](https://user-images.githubusercontent.com/54719289/107642875-7266c300-6c9b-11eb-8654-1a1130f6afdc.png)
 
+
+# Now, encrypted ksy is DEfault Encrypted one,we can update aws/secretsmanager using action
+
+![image](https://user-images.githubusercontent.com/54719289/107643395-16506e80-6c9c-11eb-9efc-9bb8dbcd7ea1.png)
+
+
+![image](https://user-images.githubusercontent.com/54719289/107643578-56175600-6c9c-11eb-9d2d-703b2ecfbb5f.png)
+
+![image](https://user-images.githubusercontent.com/54719289/107643628-692a2600-6c9c-11eb-82f0-d68dd58817a0.png)
+
+
+# Without installing boto3 with lookup:
+
+![image](https://user-images.githubusercontent.com/54719289/107645152-5ca6cd00-6c9e-11eb-98ba-1024e5ca96bd.png)
+
+# Unhandled exception and expecting region:
+
+![image](https://user-images.githubusercontent.com/54719289/107645810-3170ad80-6c9f-11eb-9060-801ac8253201.png)
+
+# for fixing the issue ,use aws configure:
+
+![image](https://user-images.githubusercontent.com/54719289/107646128-9e844300-6c9f-11eb-83ae-c2719d930bf7.png)
+
+
+# Fixing credential issue:
+
+    To call one service from other service, require either user permission or role permission ,so adding user in IAM.
+      
+  
+
