@@ -116,7 +116,7 @@
 
 
 
-# with password file and instead ask-vault usigs --vault-password-file:
+# with password file and instead ask-vault : keyword --vault-password-file=filename
 
       [root@ip-172-31-49-130 Dockerpostgres]# ansible-playbook -v psql.yml --vault-password-file=test.yml --tags=create
 
