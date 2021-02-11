@@ -127,10 +127,11 @@ Hashivault manual setup:
 ![image](https://user-images.githubusercontent.com/54719289/107700275-410ee700-6cdd-11eb-9c63-d8f38c3bdaad.png)
 
 # Hashi vault check in ansible
-     #with kv -secret folder:
+     #with kv -secret folder: don't override kv
      
 
-![image](https://user-images.githubusercontent.com/54719289/107700039-ec6b6c00-6cdc-11eb-83ab-b3da993bba69.png
+![image](https://user-images.githubusercontent.com/54719289/107700039-ec6b6c00-6cdc-11eb-83ab-b3da993bba69.png) 
+
 
 # Running ansible playbook:
 
