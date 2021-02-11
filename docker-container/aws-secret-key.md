@@ -117,7 +117,7 @@
 
 # Now no issue in ansible-playbook
 
-![image](https://user-images.githubusercontent.com/54719289/107651604-b3fc6b80-6ca5-11eb-91a3-3525f1a72d8c.png)
+![image](https://user-images.githubusercontent.com/54719289/107651708-d42c2a80-6ca5-11eb-8da4-26ec609da303.png)
 
                   
   
