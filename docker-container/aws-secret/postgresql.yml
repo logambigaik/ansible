@@ -30,7 +30,7 @@
   - name: Remove db container
     docker_container:
       name: psql-container
-      image: postgres:v1
+      image: klogambigai/postgres:v1
       state: absent
       recreate: yes
     tags: remove
