@@ -1,0 +1,44 @@
+---
+- hosts: localhost
+  vars:
+    password_vault: "{{ lookup('hashi_vault', 'secret=/kv/dev/app/psqlpwd token=s.msZM0ZYpACy30kNoCnNtlWiS url=http://34.238.251.19:8200 validate_certs=false') }}"
+
+  tasks:
+  - name: Install python-pip
+    yum:
+         name: python-pip
+         state: present
+
+  - name: Install  module
+    pip:
+         name: docker
+
+  - name: Install hvac module
+    pip:
+         name: hvac
+
+  - name: print aws secret
+    debug:
+      msg: " {{ password_vault }}"
+
+
+  - name: Run db container
+    docker_container:
+      name: psql-container
+      image: klogambigai/postgres:v1
+      state: started
+      recreate: yes
+      ports:
+      - 5432:5432
+      env:
+        PGUSER: flaskdb
+        POSTGRES_PASSWORD: " {{ password_vault }}"
+    tags: create
+
+  - name: Remove db container
+    docker_container:
+      name: psql-container
+      image: klogambigai/postgres:v1
+      state: absent
+      recreate: yes
+    tags: remove
