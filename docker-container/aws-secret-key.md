@@ -77,6 +77,52 @@
 # Fixing credential issue:
 
     To call one service from other service, require either user permission or role permission ,so adding user in IAM.
+    
+    Step1 : Add user in IAM
+
+![image](https://user-images.githubusercontent.com/54719289/107648496-67fbf780-6ca2-11eb-8258-71e4788fdf07.png)
+
+    Step2:              Username    : aws-secret-user 
+                        Access type: Programmatic access ( If we want to allow other user then we can use AWS Management Console access)
+    and click Permission
+    
+![image](https://user-images.githubusercontent.com/54719289/107649209-3c2d4180-6ca3-11eb-8ea1-7a46ef32ec6d.png)
+
+
+     Step3:       Under Attach existingpolicy directly select secretManagerReadWrite
+     
+![image](https://user-images.githubusercontent.com/54719289/107649741-c675a580-6ca3-11eb-8453-974cc131684a.png)
+
+
+      Step4:      Skip Add tag and its optional
+      
+ ![image](https://user-images.githubusercontent.com/54719289/107650333-62071600-6ca4-11eb-8fb4-47ee5436e097.png)
+
+
+      Step 5: Review
+      
+  ![image](https://user-images.githubusercontent.com/54719289/107650416-79460380-6ca4-11eb-9a71-8b725f18c621.png)
+
+
+      Step: Select Create user
+      
+  ![image](https://user-images.githubusercontent.com/54719289/107650522-94b10e80-6ca4-11eb-8a04-fd54b5cf407c.png)
+  
+              Use this credential in aws confure
+                  Accee Key : AKIA34FABYBY3MUTW4VL
+                  Secret Access key :  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
+                  
+  ![image](https://user-images.githubusercontent.com/54719289/107651435-844d6380-6ca5-11eb-875a-ea75903fc6ad.png)
+
+
+# Now no issue in ansible-playbook
+
+![image](https://user-images.githubusercontent.com/54719289/107651604-b3fc6b80-6ca5-11eb-91a3-3525f1a72d8c.png)
+
+                  
+  
+
+                        
       
   
 
