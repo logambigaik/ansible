@@ -16,3 +16,32 @@
 
 ![image](https://user-images.githubusercontent.com/54719289/107637391-1482ad00-6c94-11eb-9e44-a4e8bd1c03a5.png)
 
+#Select NEXT option
+
+
+![image](https://user-images.githubusercontent.com/54719289/107641591-cffa1000-6c99-11eb-8cbe-98888aa2f353.png)
+
+
+# Enter secret name and description ,click next:
+
+![image](https://user-images.githubusercontent.com/54719289/107641877-2b2c0280-6c9a-11eb-8134-4dfdcd722e6e.png)
+
+# Select DIsable automatic rotation and click next,
+
+![image](https://user-images.githubusercontent.com/54719289/107642078-66c6cc80-6c9a-11eb-8715-23697411481f.png)
+
+
+![image](https://user-images.githubusercontent.com/54719289/107642393-d50b8f00-6c9a-11eb-85ee-9c9408bf834d.png)
+
+
+# Click store:
+
+
+![image](https://user-images.githubusercontent.com/54719289/107642440-e5bc0500-6c9a-11eb-900a-14bbb7b3d183.png)
+
+
+Now key is ready  to use:
+
+
+![image](https://user-images.githubusercontent.com/54719289/107642647-29167380-6c9b-11eb-9e91-81c1ec90cd53.png)
+
