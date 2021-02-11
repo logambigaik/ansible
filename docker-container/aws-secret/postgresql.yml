@@ -1,0 +1,36 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Install python-pip
+    yum:
+         name: python-pip
+         state: present
+  - name: Install docker module
+    pip:
+         name: docker
+  - name: Install boto3 module
+    pip:
+         name: boto3
+  - name: Create Image
+    docker
+          
+  - name: Run db container
+    docker_container:
+      name: psql-container
+      image: klogambigai/postgres:v1
+      state: started
+      recreate: yes
+      ports:
+      - 5432:5432
+      env:
+        PGUSER: flaskdb
+        POSTGRES_PASSWORD: " {{ lookup('aws_secret','dev/app/postgrespwd') }}"
+    tags: create
+
+  - name: Remove db container
+    docker_container:
+      name: psql-container
+      image: postgres:v1
+      state: absent
+      recreate: yes
+    tags: remove
