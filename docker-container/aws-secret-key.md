@@ -40,8 +40,13 @@
 ![image](https://user-images.githubusercontent.com/54719289/107642440-e5bc0500-6c9a-11eb-900a-14bbb7b3d183.png)
 
 
-Now key is ready  to use:
+# Now key is ready  to use:
 
 
 ![image](https://user-images.githubusercontent.com/54719289/107642647-29167380-6c9b-11eb-9e91-81c1ec90cd53.png)
+
+
+# the below info is required for further process:
+
+![image](https://user-images.githubusercontent.com/54719289/107642875-7266c300-6c9b-11eb-8654-1a1130f6afdc.png)
 
