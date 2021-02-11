@@ -77,7 +77,9 @@
 # Fixing credential issue:
 
     To call one service from other service, require either user permission or role permission ,so adding user in IAM.
-    
+   
+   ### Trying with user: 
+   
     Step1 : Add user in IAM
 
 ![image](https://user-images.githubusercontent.com/54719289/107648496-67fbf780-6ca2-11eb-8258-71e4788fdf07.png)
@@ -120,7 +122,59 @@
 ![image](https://user-images.githubusercontent.com/54719289/107651708-d42c2a80-6ca5-11eb-8da4-26ec609da303.png)
 
                   
+  ### Trying with role:
   
+      Step 1: Creating Roles for EC2 instance:
+      
+ ![image](https://user-images.githubusercontent.com/54719289/107652290-70563180-6ca6-11eb-9590-6573455818a6.png)
+
+      Step 2: Attach Secret policy as like in user:
+      
+![image](https://user-images.githubusercontent.com/54719289/107652497-a5fb1a80-6ca6-11eb-8f0b-a3d2554fd204.png)
+
+
+      Step3: Skip Tags and role-name as aws-secret-role
+      
+  
+![image](https://user-images.githubusercontent.com/54719289/107652733-e5296b80-6ca6-11eb-9bcb-fa613455d60e.png)
+
+![image](https://user-images.githubusercontent.com/54719289/107653004-2b7eca80-6ca7-11eb-8955-ea02dd194509.png)
+
+
+# Already aws stored our user secret under hidden .aws folder:
+
+![image](https://user-images.githubusercontent.com/54719289/107653278-74cf1a00-6ca7-11eb-9674-a17dcc1591cd.png)
+
+![image](https://user-images.githubusercontent.com/54719289/107653441-a5af4f00-6ca7-11eb-9b2e-b95406641b00.png)
+
+
+# For using roles, deleting above info ( rm -rf .aws):
+
+![image](https://user-images.githubusercontent.com/54719289/107653735-f757d980-6ca7-11eb-909f-afce0a31ceee.png)
+
+           # Updating IAM Role under-EC2 instnce:
+           
+![image](https://user-images.githubusercontent.com/54719289/107654237-7b11c600-6ca8-11eb-8986-8747909fda5e.png)
+
+![image](https://user-images.githubusercontent.com/54719289/107654343-967cd100-6ca8-11eb-97a2-34d6c37169e6.png)
+
+
+          # After updatig IAm role, failed with region issue
+          
+ ![image](https://user-images.githubusercontent.com/54719289/107654610-d2b03180-6ca8-11eb-80b0-282ca97e5337.png)
+
+
+            # After updating reion,
+            
+  ![image](https://user-images.githubusercontent.com/54719289/107654803-fffcdf80-6ca8-11eb-8560-65342f2e9a54.png)
+
+
+# Successful run after updating role and region:
+
+![image](https://user-images.githubusercontent.com/54719289/107655115-418d8a80-6ca9-11eb-85d7-e93fd02e4af4.png)
+
+
+
 
                         
       
