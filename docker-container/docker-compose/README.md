@@ -5,7 +5,8 @@
     docker
     docker-compose
     
-#    Install using https://github.com/logambigaik/ansible/blob/main/docker-container/docker-compose/install_python_docker_coker_compose.yml
+#    Install using below url
+     https://github.com/logambigaik/ansible/blob/main/docker-container/docker-compose/install_python_docker_coker_compose.yml
 
 # docker -compse up in ansible:
 
