@@ -1,0 +1,41 @@
+---
+- hosts: localhost
+  tasks:
+  - name: Install python3-pip
+    yum:
+        name:
+        - python3
+        - python3-pip
+        state: present
+
+  - name: Install docker-compose
+    pip:
+        name:
+         - docker
+         - docker-compose
+        executable: pip-3.7
+
+  - name: Start docker service
+    service:
+       name: docker
+       state: started
+  - name: copy path
+    copy:
+      src: /usr/local/bin/docker-compose
+      dest: /usr/bin/docker-compose
+      mode: 0777
+
+  - name: python and pip version check
+    command: python3 --version
+    register: python_vsn
+
+  - name: docker running status
+    command: service docker status
+    register: doc_status
+
+  - name: Check current docker-compose version
+    command: docker-compose --version
+    register: doccompose_vsn
+
+  - debug:
+       msg: "{{python_vsn.stdout}} {{ doccompose_vsn.stdout }} {{ doc_status}}"
