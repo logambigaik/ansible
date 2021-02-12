@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+  - name: Run docker-compose up
+    docker_compose:
+       project_src: /root/Dockerpostgres
+       state: present
+    register: output
+    tags: up
+
+  - debug:
+      msg: "{{ output }}"
+
+  - name: Docker-compose down
+    docker_compose:
+       project_src: /root/Dockerpostgres
+       state: absent
+    register: output
+    tags: down
+
+  - debug:
+      msg: "{{ output }}"
