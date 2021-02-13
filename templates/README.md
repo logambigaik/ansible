@@ -41,3 +41,9 @@ In a Jinja2 template file, you will find the following tags:
  # For example:
  
   ![image](https://user-images.githubusercontent.com/54719289/107861662-531f8f80-6e6d-11eb-954a-8643f01c766d.png)
+
+
+# Jinja2 with tomcat  install and serive start:
+
+![image](https://user-images.githubusercontent.com/54719289/107862859-eeb4fe00-6e75-11eb-8e6c-043481d3cc97.png)
+![image](https://user-images.githubusercontent.com/54719289/107862881-0ab89f80-6e76-11eb-887d-ad146e858143.png)
