@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  vars:
+   version_number: '2.4.37'
+   server: 'Ubuntu'
+  tasks:
+   - name: Jinja2 template example
+     template:
+        src: example.j2
+        dest: file1.txt
