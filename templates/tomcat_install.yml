@@ -1,7 +1,7 @@
 ---
-- hosts: webservers
+- hosts: localhost
   vars:
-    tomcat_url: https://downloads.apache.org/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8.5.61.tar.gz 
+    tomcat_url: https://downloads.apache.org/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8.5.61.tar.gz
     tomcat_download_directory: /opt
     tomcat_download_version: apache-tomcat-8.5.61
   tasks:
@@ -12,25 +12,21 @@
     - name: Install tomcat
       get_url:
            url:  "{{ tomcat_url }}"
-           dest: /opt
+           dest: "{{ tomcat_download_directory }}"
            mode: '0440'
     - name: Unarchive tomcat tar
       unarchive:
-           src: "{{ tomcat_download_directory }}" / "{{ tomcat_download_version }}"
-           dest: /opt
+           src: "{{ tomcat_download_directory }}/{{ tomcat_download_version }}.tar.gz"
+           dest: "{{ tomcat_download_directory }}"
            remote_src: yes
- 
+
     - name: Tomcat service copy
-      copy:
+      template:
           src: ./tomcat.service.j2
-          dest: /etc/systemd/system
+          dest: /etc/systemd/system/tomcat.service
           mode: 0777
-       
-    - name: Tomcat service copy
-      copy:
-          src: ./tomcat.service
-          dest: /etc/systemd/system
-          mode: 0777
+          remote_src: yes
+
     - name: Start the tomcat
       service:
           name: tomcat
