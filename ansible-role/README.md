@@ -12,3 +12,9 @@
   DocumentRoot "/var/www/html"
 
   ![image](https://user-images.githubusercontent.com/54719289/107888057-5f205580-6f30-11eb-94c8-7ee1432ae694.png)
+
+  # To know the index file:
+  
+        [root@ip-172-31-90-165 conf]# cat /etc/httpd/conf/httpd.conf | grep DirectoryIndex
+        # DirectoryIndex: sets the file that Apache will serve if a directory
+        DirectoryIndex index.html
