@@ -34,5 +34,6 @@ Link: https://www.learnitguide.net/2018/02/ansible-roles-explained-with-examples
 
 # First inside tasks folder create install.yml and configure.yml and in files folder copy the httpd config and our updated index.html from httpd.
 
-![image](https://user-images.githubusercontent.com/54719289/107889891-91838000-6f3b-11eb-910d-000410c72703.png)
+!![image](https://user-images.githubusercontent.com/54719289/107889930-e1fadd80-6f3b-11eb-8144-55557cbd906c.png)
+
 
