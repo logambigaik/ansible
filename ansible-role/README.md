@@ -44,3 +44,10 @@ Link: https://www.learnitguide.net/2018/02/ansible-roles-explained-with-examples
 # Update main.yml in tasks,handles and meta folder:
 
 ![image](https://user-images.githubusercontent.com/54719289/107890211-a82ad680-6f3d-11eb-8daa-c753093a53ce.png)
+
+
+# Linux command for find and replace:
+
+grep -rli 'old-word' * | xargs -i@ sed -i 's/old-word/new-word/g' @
+
+grep -rli 'loga' * | xargs -i@ sed -i 's/loga/loga-ansiblerole/g' @
