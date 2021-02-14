@@ -1,8 +1,8 @@
 # Manual process for http:
 
-  >> Install httpd 
-  >> Configure httpd
-  >> Start httpd 
+        >> Install httpd 
+        >> Configure httpd
+        >> Start httpd 
   
  
   # Conf file present in: /etc/httpd/conf/httpd.conf
