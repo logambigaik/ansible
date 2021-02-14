@@ -18,3 +18,6 @@
         [root@ip-172-31-90-165 conf]# cat /etc/httpd/conf/httpd.conf | grep DirectoryIndex
         # DirectoryIndex: sets the file that Apache will serve if a directory
         DirectoryIndex index.html
+        
+ ![image](https://user-images.githubusercontent.com/54719289/107889262-64cd6980-6f37-11eb-8ab8-11890fd3e247.png)
+
